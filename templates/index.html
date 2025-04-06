@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container text-center mt-5">
+    <h2 class="mb-4">Welcome to the Bank Account Manager</h2>
+    <p class="lead mb-4">Easily create an account, deposit or withdraw money, and check your balance — all in one place.</p>
+    
+    <div class="row justify-content-center gap-3">
+        <div class="col-md-2">
+            <a href="/create" class="btn btn-primary w-100">Create Account</a>
+        </div>
+        <div class="col-md-2">
+            <a href="/deposit" class="btn btn-success w-100">Deposit</a>
+        </div>
+        <div class="col-md-2">
+            <a href="/withdraw" class="btn btn-danger w-100">Withdraw</a>
+        </div>
+        <div class="col-md-2">
+            <a href="/balance" class="btn btn-info w-100">Check Balance</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
